@@ -17,3 +17,20 @@ A RESTful API built with Node.js and Express to manage quotes.
 ```bash
 npm install
 node server.js
+```
+
+
+### POST A QUOTE
+
+```
+curl -X POST http://localhost:3000/quotes \
+  -H "Content-Type: application/json" \
+  -d '{"author": "Ben Okri", "text": "Stories can conquer fear, you know. They can make the heart bigger."}'
+```
+
+
+### GET ALL QUOTES
+
+```
+curl http://localhost:3000/quotes
+```
